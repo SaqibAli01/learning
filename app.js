@@ -1,11 +1,9 @@
-function Myfuncation(){
-    var x = document.getElementById("menu");
-    if(x.style.display == "block"){
-        x.style.display == "none"
-        
-    }
-    else{
-        x.style.display == "block"
-    }
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.nav');
+
+menu.onclick = () =>{
+
+  menu.classList.toggle('menu-bar');
+  navbar.classList.toggle('active');
 
 }
